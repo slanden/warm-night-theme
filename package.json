@@ -2,13 +2,22 @@
     "name": "warm-night",
     "displayName": "Warm Night",
     "description": "A warm dark theme for VS Code",
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/slanden/warm-night-theme.git"
+    },
     "engines": {
         "vscode": "^1.68.0"
     },
     "categories": [
         "Themes"
     ],
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#1d2a2a",
+        "theme": "dark"
+    },
     "contributes": {
         "themes": [
             {
@@ -20,5 +29,8 @@
     },
     "scripts": {
         "replace": "~/Projects/replace-css-vars/target/release/replace-css-vars source-color-theme.json > themes/warm-night.json"
+    },
+    "devDependencies": {
+        "vsce": "^2.9.2"
     }
 }
