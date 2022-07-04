@@ -1,0 +1,24 @@
+{
+    "name": "warm-night",
+    "displayName": "Warm Night",
+    "description": "A warm dark theme for VS Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Warm Night",
+                "uiTheme": "vs-dark",
+                "path": "./themes/warm-night.json"
+            }
+        ]
+    },
+    "scripts": {
+        "replace": "~/Projects/replace-css-vars/target/release/replace-css-vars source-color-theme.json > themes/warm-night.json"
+    }
+}
