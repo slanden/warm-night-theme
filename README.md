@@ -1,5 +1,7 @@
 # Warm Night Theme
 
-The colors were chosen to help with eye fatigue, and meet the WCAG AA standard for contrast. If you have trouble seeing something let me know and I'll try to improve it.
+I often work in VS Code 'til late in the night, and the default dark theme starts to blind me at times. While there are some great themes out there, most that I've found have a tone too cold for my tastes. The Warm Night theme is my take on a warmer dark theme, inspired by sunsets in the mountains.
 
-I'm not entirely happy with the highlight styles, and didn't spend much time on them so they're probably not consistent.
+The palette aims to meet WCAG AA for contrast. If you have trouble seeing something let me know and I'll try to improve it.
+
+I didn't spend much time on highlights or the Peek view, So these might need improvement.
