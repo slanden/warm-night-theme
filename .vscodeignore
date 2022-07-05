@@ -1,2 +1,7 @@
 .vscode/**
 .gitignore
+examples
+node_modules
+screenshot.png
+source-color-theme.json
+package-lock.json
