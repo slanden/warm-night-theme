@@ -7,12 +7,15 @@
 		"--surface3": "hsl(180, 18.3%, 13.9%)",
 		"--surface4": "hsl(180, 9.1%, 12.9%)",
 		"--surface5": "hsl(180, 7.5%, 15.7%)",
+		"--surface6": "hsl(180, 6.3%, 18.8%)",
 		"--text1": "hsl(40.5, 29%, 72.9%)",
 		"--text2": "hsl(40.5, 35%, 80%)",
+		// TODO: This is very similar to `--function`, but less bright.
+		// Maybe pick one (or take the average) and reuse it.
 		"--interact": "hsl(31, 93%, 67%)",
-		"--interact-brighter": "hsl(31, 80%, 75%)",
-		"--interact2": "hsl(8.6, 96.4%, 67.3%)",
-		"--interact2-inactive": "hsl(8.6, 96.4%, 67.3%, 0.4)",
+		"--interact-brighter": "hsl(31, 91%, 72%)",
+		// "--interact2": "#4c928b34",
+		// "--interact2-brighter": "#4c928b42",
 		"--error": "#FF3131",
 		"--highlight": "hsl(12.2, 56.8%, 62.7%, 0.2)",
 		"--highlight-inactive": "hsl(12.2, 56.8%, 62.7%, 0.1)",
@@ -57,14 +60,17 @@
 		"button.background": "var(--interact)",
 		"button.border": "var(--interact)",
 		"button.foreground": "var(--surface1)",
-		"button.hoverBackground": "var(--keyword)",
-		"button.secondaryBackground": "#00000000",
+		"button.hoverBackground": "var(--interact-brighter)",
+		"button.secondaryBackground": "var(--surface5)",
+		"button.secondaryForeground": "var(--text1)",
+		"button.secondaryHoverBackground": "var(--surface6)",
 		"editor.background": "var(--surface1)",
 		// "editor.foldBackground": "#43616434",
 		"editor.foreground": "var(--text1)",
 		"editor.lineHighlightBorder": "var(--surface3)",
 		"editor.selectionBackground": "var(--highlight)",
 		"editor.wordHighlightStrongBackground": "var(--highlight2)",
+		"editorCursor.foreground": "var(--text1)",
 		// "editorBracketHighlight.foreground1": "#ffca85",
 		"editorBracketHighlight.foreground1": "var(--text1)",
 		// "editorBracketHighlight.foreground2": "#e3b578",
@@ -488,42 +494,13 @@
 			}
 		},
 		{
-			"name": "Decorators",
-			"scope": [
-				"tag.decorator.js entity.name.tag.js",
-				"tag.decorator.js punctuation.definition.tag.js"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#82AAFF"
-			}
-		},
-		{
-			"name": "Markdown - Plain",
-			"scope": [
-				"text.html.markdown",
-				"punctuation.definition.list_item.markdown"
-			],
-			"settings": {
-				"foreground": "var(--text1)"
-			}
-		},
-		{
 			"name": "Markdown - Markup Raw Inline",
 			"scope": [
-				"text.html.markdown markup.inline.raw.markdown"
+				"text.html.markdown markup.inline.raw.markdown",
+				"markup.inline.raw.string.markdown"
 			],
 			"settings": {
-				"foreground": "#C792EA"
-			}
-		},
-		{
-			"name": "Markdown - Markup Raw Inline Punctuation",
-			"scope": [
-				"text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown"
-			],
-			"settings": {
-				"foreground": "#65737E"
+				"foreground": "var(--string2)"
 			}
 		},
 		{
@@ -534,7 +511,7 @@
 				"markup.heading.markdown punctuation.definition.heading.markdown"
 			],
 			"settings": {
-				"foreground": "#C3E88D"
+				"foreground": "var(--keyword)"
 			}
 		},
 		{
@@ -544,7 +521,6 @@
 			],
 			"settings": {
 				"fontStyle": "italic"
-				// "foreground": "#f07178"
 			}
 		},
 		{
@@ -555,7 +531,6 @@
 			],
 			"settings": {
 				"fontStyle": "bold"
-				// "foreground": "#f07178"
 			}
 		},
 		{
@@ -569,8 +544,7 @@
 				"markup.quote markup.bold string"
 			],
 			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#f07178"
+				"fontStyle": "italic bold"
 			}
 		},
 		{
@@ -580,16 +554,6 @@
 			],
 			"settings": {
 				"fontStyle": "underline"
-				// "foreground": "#F78C6C"
-			}
-		},
-		{
-			"name": "Markdown - Blockquote",
-			"scope": [
-				"markup.quote punctuation.definition.blockquote.markdown"
-			],
-			"settings": {
-				"foreground": "#65737E"
 			}
 		},
 		{
@@ -602,12 +566,22 @@
 			}
 		},
 		{
+			"name": "Markdown - Separator",
+			"scope": [
+				"meta.separator"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "var(--operator)"
+			}
+		},
+		{
 			"name": "Markdown - Link",
 			"scope": [
 				"string.other.link.title.markdown"
 			],
 			"settings": {
-				"foreground": "#82AAFF"
+				"foreground": "var(--variable)"
 			}
 		},
 		{
@@ -616,7 +590,7 @@
 				"string.other.link.description.title.markdown"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "var(--text1)"
 			}
 		},
 		{
@@ -625,73 +599,16 @@
 				"constant.other.reference.link.markdown"
 			],
 			"settings": {
-				"foreground": "#FFCB6B"
+				"foreground": "var(--constant)"
 			}
 		},
 		{
-			"name": "Markup - Raw Block",
+			"name": "Markdown - Link",
 			"scope": [
-				"markup.raw.block"
+				"markup.underline.link"
 			],
 			"settings": {
-				"foreground": "#C792EA"
-			}
-		},
-		{
-			"name": "Markdown - Raw Block Fenced",
-			"scope": [
-				"markup.raw.block.fenced.markdown"
-			],
-			"settings": {
-				"foreground": "#00000050"
-			}
-		},
-		{
-			"name": "Markdown - Fenced Bode Block",
-			"scope": [
-				"punctuation.definition.fenced.markdown"
-			],
-			"settings": {
-				"foreground": "#00000050"
-			}
-		},
-		{
-			"name": "Markdown - Fenced Bode Block Variable",
-			"scope": [
-				"markup.raw.block.fenced.markdown",
-				"variable.language.fenced.markdown",
-				"punctuation.section.class.end"
-			],
-			"settings": {
-				"foreground": "#EEFFFF"
-			}
-		},
-		{
-			"name": "Markdown - Fenced Language",
-			"scope": [
-				"variable.language.fenced.markdown"
-			],
-			"settings": {
-				"foreground": "#65737E"
-			}
-		},
-		{
-			"name": "Markdown - Separator",
-			"scope": [
-				"meta.separator"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#65737E"
-			}
-		},
-		{
-			"name": "Markup - Table",
-			"scope": [
-				"markup.table"
-			],
-			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "var(--interact)"
 			}
 		}
 	]
