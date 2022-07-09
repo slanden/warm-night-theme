@@ -3,7 +3,7 @@
     "displayName": "Warm Night",
     "description": "A warm dark theme for VS Code",
     "publisher": "shelby-landen",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "repository": {
         "type": "git",
         "url": "https://github.com/slanden/warm-night-theme.git"

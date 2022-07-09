@@ -37,7 +37,7 @@
 		"editorBracketHighlight.foreground6": "#AE9F7EFF",
 		"editorBracketHighlight.unexpectedBracket.foreground": "#F07D60FF",
 		"editorGroupHeader.tabsBackground": "#142121FF",
-		"editorInlayHint.background": "#000",
+		"editorInlayHint.background": "#0000",
 		"editorInlayHint.foreground": "#937982FF",
 		"editorLineNumber.activeForeground": "#C4AFB7FF",
 		"editorLineNumber.foreground": "#937982FF",
@@ -46,6 +46,7 @@
 		"editorSuggestWidget.highlightForeground": "#F9AD5DFF",
 		"editorSuggestWidget.selectedBackground": "#F07D602B",
 		"editorWidget.background": "#1E2424FF",
+		"extensionIcon.sponsorForeground": "#4C928BFF",
 		"focusBorder": "#F9AD5DFF",
 		"foreground": "#CEC1A6FF",
 		"icon.foreground": "#CEC1A6FF",
@@ -65,7 +66,7 @@
 		"peekViewResult.lineForeground": "#CEC1A6FF",
 		"peekViewTitleDescription.foreground": "#CEC1A6FF",
 		"peekViewTitleLabel.foreground": "#DED2BAFF",
-		"pickerGroup.foreground": "#F9AD5DFF",		
+		"pickerGroup.foreground": "#F9AD5DFF",
 		"progressBar.background": "#F9AD5DFF",
 		"selection.background": "#F07D602B",
 		"sideBar.background": "#142121FF",
@@ -85,10 +86,11 @@
 		"tab.inactiveBackground": "#1D2A2AFF",
 		"terminal.foreground": "#CEC1A6FF",
 		"terminal.selectionBackground": "#F07D602B",
+		"textBlockQuote.border": "#F07D60FF",
 		"textLink.activeForeground": "#F9BA77FF",
 		"textLink.foreground": "#F9AD5DFF",
 		"titleBar.activeBackground": "#1E2424FF"
-		},
+	},
 	"tokenColors": [
 		{
 			"name": "Comment",
@@ -159,7 +161,7 @@
 				"variable.parameter",
 				"constant.other.caps",
 				"variable.other.constant"
-				],
+			],
 			"settings": {
 				"foreground": "#FFDDA8FF"
 			}
@@ -250,7 +252,7 @@
 				"punctuation.section.embedded",
 				"keyword.operator",
 				"punctuation.definition.interpolation"
-				],
+			],
 			"settings": {
 				"foreground": "#4C928BFF"
 			}

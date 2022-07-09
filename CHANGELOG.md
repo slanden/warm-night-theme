@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.5
+
+- Fixed inlay hint still missing the extra alpha channel '0'
+- Changed rendered markdown block quote accent color
+- Changed extension sponsor icon color to one of the main palette colors
+
 ## 1.0.4
 
 - Fixed inlay hint background not being transparent

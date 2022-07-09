@@ -91,7 +91,7 @@
 		// "editorCodeLens.foreground": "var(--codelens-text)",
 		// "editorError.foreground": "var(--error)"
 		"editorGroupHeader.tabsBackground": "var(--surface2)",
-		"editorInlayHint.background": "#000",
+		"editorInlayHint.background": "#0000",
 		"editorInlayHint.foreground": "var(--comment)",
 		"editorLineNumber.activeForeground": "var(--comment-brighter)",
 		"editorLineNumber.foreground": "var(--comment)",
@@ -102,6 +102,11 @@
 		"editorSuggestWidget.selectedBackground": "var(--highlight)",
 		// "editorSuggestWidget.selectedForeground": "var(--text1)",
 		"editorWidget.background": "var(--surface4)",
+		// ?
+		// Not sure if this should instead be the same color
+		// as other interactions, or perhaps the same as
+		// accents, which use `--keyword`.
+		"extensionIcon.sponsorForeground": "var(--operator)",
 		"focusBorder": "var(--interact)",
 		"foreground": "var(--text1)",
 		"icon.foreground": "var(--text1)",
@@ -126,7 +131,7 @@
 		"peekViewTitleDescription.foreground": "var(--text1)",
 		"peekViewTitleLabel.foreground": "var(--text2)",
 		// "pickerGroup.foreground": "#fc905b", OR '--keyword'
-		"pickerGroup.foreground": "var(--interact)",		
+		"pickerGroup.foreground": "var(--interact)",
 		"progressBar.background": "var(--interact)",
 		"selection.background": "var(--highlight)",
 		"sideBar.background": "var(--surface2)",
@@ -147,11 +152,11 @@
 		// "tab.inactiveForeground": "var(--tab-inactive-bg)",
 		"terminal.foreground": "var(--text1)",
 		"terminal.selectionBackground": "var(--highlight)",
+		"textBlockQuote.border": "var(--keyword)",
 		"textLink.activeForeground": "var(--interact-brighter)",
 		"textLink.foreground": "var(--interact)",
 		"titleBar.activeBackground": "var(--surface4)"
 		// "editor.findRangeHighlightBackground": "#3a3d4166",
-		
 		// "inputOption.activeBackground": "#fc905b58",
 		// "menu.selectionBackground": "#fc905b58",
 		// "menubar.selectionBackground": "#ffffff1a",
