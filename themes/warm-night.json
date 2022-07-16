@@ -110,7 +110,10 @@
 				"string constant.other.placeholder",
 				"meta.block variable.other",
 				"support.other.variable",
-				"string.other.link"
+				"support.variable.other",
+				"string.other.link",
+				"meta.function.call.rust",
+				"meta.object.member"
 			],
 			"settings": {
 				"foreground": "#E0AA8FFF"
@@ -160,6 +163,7 @@
 				"constant.escape",
 				"variable.parameter",
 				"constant.other.caps",
+				"constant.other.php",
 				"variable.other.constant"
 			],
 			"settings": {
@@ -336,25 +340,16 @@
 			}
 		},
 		{
-			"name": "Class, Support",
+			"name": "Entity Types, Class, Support",
 			"scope": [
 				"entity.name",
 				"support.type",
 				"support.class",
 				"support.other.namespace.use.php",
-				"meta.use.php",
+				"meta.use",
 				"support.other.namespace.php",
 				"markup.changed.git_gutter",
 				"support.type.sys-types"
-			],
-			"settings": {
-				"foreground": "#E85C87FF"
-			}
-		},
-		{
-			"name": "Entity Types",
-			"scope": [
-				"support.type"
 			],
 			"settings": {
 				"foreground": "#E85C87FF"

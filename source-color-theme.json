@@ -182,7 +182,10 @@
 				"meta.block variable.other",
 				// Other
 				"support.other.variable",
-				"string.other.link"
+				"support.variable.other",
+				"string.other.link",
+				"meta.function.call.rust",
+				"meta.object.member"
 			],
 			"settings": {
 				"foreground": "var(--variable)"
@@ -236,6 +239,7 @@
 				"variable.parameter",
 				// "keyword.other.unit",
 				"constant.other.caps",
+				"constant.other.php",
 				"variable.other.constant"
 				// "variable.other.enummember",
 				// "keyword.other"
@@ -424,25 +428,16 @@
 			}
 		},
 		{
-			"name": "Class, Support",
+			"name": "Entity Types, Class, Support",
 			"scope": [
 				"entity.name",
 				"support.type",
 				"support.class",
 				"support.other.namespace.use.php",
-				"meta.use.php",
+				"meta.use",
 				"support.other.namespace.php",
 				"markup.changed.git_gutter",
 				"support.type.sys-types"
-			],
-			"settings": {
-				"foreground": "var(--entity)"
-			}
-		},
-		{
-			"name": "Entity Types",
-			"scope": [
-				"support.type"
 			],
 			"settings": {
 				"foreground": "var(--entity)"
