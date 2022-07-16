@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.0.6
+
+- Fixed some cases of nested properties having incorrect color
+- Fixed color of Rust custom namespace in `use` statements
+- Changed JavaScript function param color to match that of other
+- Changed the interactive color to match function color (`--function`)
+- Optimized images
+
 ## 1.0.5
 
 - Fixed inlay hint still missing the extra alpha channel '0'

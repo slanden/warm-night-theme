@@ -18,16 +18,16 @@
 		"button.hoverBackground": "#F9BA77FF",
 		"button.secondaryBackground": "#252B2BFF",
 		"button.secondaryForeground": "#CEC1A6FF",
-		"button.secondaryHoverBackground": "#2D3333FF",
+		"button.secondaryHoverBackground": "#2D3434FF",
 		"editor.background": "#011B1CFF",
-		"editor.findMatchBackground": "#F07D602B",
+		"editor.findMatchBackground": "#F07D6030",
 		"editor.findMatchHighlightBackground": "#F07D6024",
 		"editor.foreground": "#CEC1A6FF",
 		"editor.hoverHighlightBackground": "#F07D6024",
 		"editor.lineHighlightBorder": "#233333FF",
-		"editor.selectionBackground": "#F07D602B",
-		"editor.wordHighlightBackground": "#F07D602B",
-		"editor.wordHighlightStrongBackground": "#F07D602B",
+		"editor.selectionBackground": "#F07D6030",
+		"editor.wordHighlightBackground": "#F07D6030",
+		"editor.wordHighlightStrongBackground": "#F07D6030",
 		"editorCursor.foreground": "#CEC1A6FF",
 		"editorBracketHighlight.foreground1": "#CEC1A6FF",
 		"editorBracketHighlight.foreground2": "#AE9F7EFF",
@@ -44,13 +44,13 @@
 		"editorLink.activeForeground": "#F9BA77FF",
 		"editorSuggestWidget.focusHighlightForeground": "#F9AD5DFF",
 		"editorSuggestWidget.highlightForeground": "#F9AD5DFF",
-		"editorSuggestWidget.selectedBackground": "#F07D602B",
+		"editorSuggestWidget.selectedBackground": "#F07D6030",
 		"editorWidget.background": "#1E2424FF",
 		"extensionIcon.sponsorForeground": "#4C928BFF",
 		"focusBorder": "#F9AD5DFF",
 		"foreground": "#CEC1A6FF",
 		"icon.foreground": "#CEC1A6FF",
-		"list.activeSelectionBackground": "#F07D602B",
+		"list.activeSelectionBackground": "#F07D6030",
 		"list.activeSelectionForeground": "#CEC1A6FF",
 		"list.focusHighlightForeground": "#F9AD5DFF",
 		"list.highlightForeground": "#F9AD5DFF",
@@ -59,7 +59,7 @@
 		"panelTitle.activeForeground": "#CEC1A6FF",
 		"peekView.border": "#F9AD5DFF",
 		"peekViewEditor.background": "#1E2424FF",
-		"peekViewEditor.matchHighlightBackground": "#F07D602B",
+		"peekViewEditor.matchHighlightBackground": "#F07D6030",
 		"peekViewEditorGutter.background": "#1E2424FF",
 		"peekViewResult.background": "#252B2BFF",
 		"peekViewResult.fileForeground": "#DED2BAFF",
@@ -68,7 +68,7 @@
 		"peekViewTitleLabel.foreground": "#DED2BAFF",
 		"pickerGroup.foreground": "#F9AD5DFF",
 		"progressBar.background": "#F9AD5DFF",
-		"selection.background": "#F07D602B",
+		"selection.background": "#F07D6030",
 		"sideBar.background": "#142121FF",
 		"sideBarSectionHeader.background": "#142121FF",
 		"sideBarTitle.foreground": "#CEC1A6FF",
@@ -78,14 +78,14 @@
 		"symbolIcon.classForeground": "#E85C87FF",
 		"symbolIcon.constantForeground": "#FFDDA8FF",
 		"symbolIcon.fieldForeground": "#E0AA8FFF",
-		"symbolIcon.functionForeground": "#FFBA61FF",
-		"symbolIcon.methodForeground": "#FFBA61FF",
+		"symbolIcon.functionForeground": "#F9AD5DFF",
+		"symbolIcon.methodForeground": "#F9AD5DFF",
 		"symbolIcon.propertyForeground": "#E0AA8FFF",
 		"symbolIcon.variableForeground": "#E0AA8FFF",
 		"tab.activeForeground": "#CEC1A6FF",
 		"tab.inactiveBackground": "#1D2A2AFF",
 		"terminal.foreground": "#CEC1A6FF",
-		"terminal.selectionBackground": "#F07D602B",
+		"terminal.selectionBackground": "#F07D6030",
 		"textBlockQuote.border": "#F07D60FF",
 		"textLink.activeForeground": "#F9BA77FF",
 		"textLink.foreground": "#F9AD5DFF",
@@ -107,13 +107,14 @@
 			"name": "Variables",
 			"scope": [
 				"variable",
+				"variable.parameter",
 				"string constant.other.placeholder",
 				"meta.block variable.other",
+				"meta.function.call.rust",
+				"meta.object.member",
 				"support.other.variable",
 				"support.variable.other",
-				"string.other.link",
-				"meta.function.call.rust",
-				"meta.object.member"
+				"string.other.link"
 			],
 			"settings": {
 				"foreground": "#E0AA8FFF"
@@ -161,7 +162,6 @@
 				"constant.language",
 				"constant.character",
 				"constant.escape",
-				"variable.parameter",
 				"constant.other.caps",
 				"constant.other.php",
 				"variable.other.constant"
@@ -271,7 +271,7 @@
 				"keyword.other.special-method"
 			],
 			"settings": {
-				"foreground": "#FFBA61FF"
+				"foreground": "#F9AD5DFF"
 			}
 		},
 		{
@@ -282,7 +282,7 @@
 				"variable.other.class.js"
 			],
 			"settings": {
-				"foreground": "#FFBA61FF"
+				"foreground": "#F9AD5DFF"
 			}
 		},
 		{
@@ -292,7 +292,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#FFBA61FF"
+				"foreground": "#F9AD5DFF"
 			}
 		},
 		{
@@ -302,7 +302,7 @@
 				"variable.function.constructor"
 			],
 			"settings": {
-				"foreground": "#FFBA61FF"
+				"foreground": "#F9AD5DFF"
 			}
 		},
 		{

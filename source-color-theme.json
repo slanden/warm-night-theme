@@ -8,17 +8,13 @@
 		"--surface3-border": "hsl(180, 18.3%, 17%)",
 		"--surface4": "hsl(180, 9.1%, 12.9%)",
 		"--surface5": "hsl(180, 7.5%, 15.7%)",
-		"--surface6": "hsl(180, 6.3%, 18.8%)",
+		"--surface6": "hsl(180, 6.3%, 19%)",
 		"--text1": "hsl(40.5, 29%, 72.9%)",
 		"--text2": "hsl(40.5, 35%, 80%)",
-		// TODO: This is very similar to `--function`, but less bright.
-		// Maybe pick one (or take the average) and reuse it.
-		"--interact": "hsl(31, 93%, 67%)",
-		"--interact-brighter": "hsl(31, 91%, 72%)",
 		// "--interact2": "#4c928b34",
 		// "--interact2-brighter": "#4c928b42",
 		"--error": "#FF3131",
-		"--highlight": "hsl(12, 83%, 66%, 0.17)",
+		"--highlight": "hsl(12, 83%, 66%, 0.19)",
 		"--highlight-inactive": "hsl(12, 83%, 66%, 0.14)",
 		// "--border1": "hsl(13.1, 15.8%, 39.6%)",
 		// "--border2": "hsl(180, 18.3%, 13.9%)",
@@ -39,7 +35,10 @@
 		"--number": "hsl(90, 23.3%, 59.6%)",
 		"--constant": "hsl(36.6, 100%, 82.9%)",
 		"--constant2": "hsl(265, 15.2%, 69%)",
-		"--function": "hsl(33.8, 100%, 69%)",
+		// "--function": "hsl(33.8, 100%, 69%)",
+		"--function": "hsl(31, 93%, 67%)",
+		// For hover color when used on interactive elements
+		"--function-brighter": "hsl(31, 91%, 72%)",
 		"--entity": "hsl(341.6, 75.3%, 63.5%)",
 		"--operator": "hsl(174, 31.5%, 43.5%)"
 		// "--attribute": "hsl(20, 56.6%, 72%)",
@@ -47,9 +46,9 @@
 	"colors": {
 		"activityBar.background": "var(--surface3)",
 		"activityBar.foreground": "var(--keyword)",
-		"activityBarBadge.background": "var(--interact)",
+		"activityBarBadge.background": "var(--function)",
 		"activityBarBadge.foreground": "var(--surface1)",
-		"badge.background": "var(--interact)",
+		"badge.background": "var(--function)",
 		"badge.foreground": "var(--surface1)",
 		"banner.iconForeground": "var(--keyword)",
 		// "banner.background": "#b14a389d",
@@ -57,10 +56,10 @@
 		"banner.foreground": "var(--surface1)",
 		"breadcrumb.activeSelectionForeground": "var(--text2)",
 		"breadcrumb.focusForeground": "var(--text2)",
-		"button.background": "var(--interact)",
-		"button.border": "var(--interact)",
+		"button.background": "var(--function)",
+		"button.border": "var(--function)",
 		"button.foreground": "var(--surface1)",
-		"button.hoverBackground": "var(--interact-brighter)",
+		"button.hoverBackground": "var(--function-brighter)",
 		"button.secondaryBackground": "var(--surface5)",
 		"button.secondaryForeground": "var(--text1)",
 		"button.secondaryHoverBackground": "var(--surface6)",
@@ -95,10 +94,10 @@
 		"editorInlayHint.foreground": "var(--comment)",
 		"editorLineNumber.activeForeground": "var(--comment-brighter)",
 		"editorLineNumber.foreground": "var(--comment)",
-		"editorLink.activeForeground": "var(--interact-brighter)",
+		"editorLink.activeForeground": "var(--function-brighter)",
 		// "editorSuggestWidget.background": "var(--surface4)",
-		"editorSuggestWidget.focusHighlightForeground": "var(--interact)",
-		"editorSuggestWidget.highlightForeground": "var(--interact)",
+		"editorSuggestWidget.focusHighlightForeground": "var(--function)",
+		"editorSuggestWidget.highlightForeground": "var(--function)",
 		"editorSuggestWidget.selectedBackground": "var(--highlight)",
 		// "editorSuggestWidget.selectedForeground": "var(--text1)",
 		"editorWidget.background": "var(--surface4)",
@@ -107,20 +106,20 @@
 		// as other interactions, or perhaps the same as
 		// accents, which use `--keyword`.
 		"extensionIcon.sponsorForeground": "var(--operator)",
-		"focusBorder": "var(--interact)",
+		"focusBorder": "var(--function)",
 		"foreground": "var(--text1)",
 		"icon.foreground": "var(--text1)",
 		"list.activeSelectionBackground": "var(--highlight)",
 		"list.activeSelectionForeground": "var(--text1)",
-		"list.focusHighlightForeground": "var(--interact)",
-		"list.highlightForeground": "var(--interact)",
+		"list.focusHighlightForeground": "var(--function)",
+		"list.highlightForeground": "var(--function)",
 		"list.inactiveSelectionBackground": "var(--highlight-inactive)",
 		"notifications.background": "var(--surface4)",
 		// For some reason, this doesn't affect the top right icons
 		// "notifications.foreground": "var(--surface1)",
 		// "panelTitle.activeBorder": "var(--text1)",
 		"panelTitle.activeForeground": "var(--text1)",
-		"peekView.border": "var(--interact)",
+		"peekView.border": "var(--function)",
 		"peekViewEditor.background": "var(--surface4)",
 		"peekViewEditor.matchHighlightBackground": "var(--highlight)",
 		"peekViewEditorGutter.background": "var(--surface4)",
@@ -131,8 +130,8 @@
 		"peekViewTitleDescription.foreground": "var(--text1)",
 		"peekViewTitleLabel.foreground": "var(--text2)",
 		// "pickerGroup.foreground": "#fc905b", OR '--keyword'
-		"pickerGroup.foreground": "var(--interact)",
-		"progressBar.background": "var(--interact)",
+		"pickerGroup.foreground": "var(--function)",
+		"progressBar.background": "var(--function)",
 		"selection.background": "var(--highlight)",
 		"sideBar.background": "var(--surface2)",
 		"sideBarSectionHeader.background": "var(--surface2)",
@@ -153,8 +152,8 @@
 		"terminal.foreground": "var(--text1)",
 		"terminal.selectionBackground": "var(--highlight)",
 		"textBlockQuote.border": "var(--keyword)",
-		"textLink.activeForeground": "var(--interact-brighter)",
-		"textLink.foreground": "var(--interact)",
+		"textLink.activeForeground": "var(--function-brighter)",
+		"textLink.foreground": "var(--function)",
 		"titleBar.activeBackground": "var(--surface4)"
 		// "editor.findRangeHighlightBackground": "#3a3d4166",
 		// "inputOption.activeBackground": "#fc905b58",
@@ -177,15 +176,16 @@
 			"name": "Variables",
 			"scope": [
 				"variable",
+				"variable.parameter",
 				"string constant.other.placeholder",
 				// Block level variables
 				"meta.block variable.other",
 				// Other
+				"meta.function.call.rust",
+				"meta.object.member",
 				"support.other.variable",
 				"support.variable.other",
-				"string.other.link",
-				"meta.function.call.rust",
-				"meta.object.member"
+				"string.other.link"
 			],
 			"settings": {
 				"foreground": "var(--variable)"
@@ -236,7 +236,7 @@
 				// "support.constant",
 				"constant.character",
 				"constant.escape",
-				"variable.parameter",
+				// "variable.parameter",
 				// "keyword.other.unit",
 				"constant.other.caps",
 				"constant.other.php",
@@ -605,7 +605,7 @@
 				"markup.underline.link"
 			],
 			"settings": {
-				"foreground": "var(--interact)"
+				"foreground": "var(--function)"
 			}
 		}
 	]
