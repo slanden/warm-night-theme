@@ -13,9 +13,9 @@
 		"--text2": "hsl(40.5, 35%, 80%)",
 		// "--interact2": "#4c928b34",
 		// "--interact2-brighter": "#4c928b42",
-		"--error": "#FF3131",
+		"--error": "hsl(0, 80%, 60%)",
 		"--highlight": "hsl(12, 83%, 66%, 0.19)",
-		"--highlight-inactive": "hsl(12, 83%, 66%, 0.14)",
+		"--highlight-inactive": "hsl(12, 83%, 66%, 0.15)",
 		// "--border1": "hsl(13.1, 15.8%, 39.6%)",
 		// "--border2": "hsl(180, 18.3%, 13.9%)",
 		"--status-bar": "hsl(222.9, 14.9%, 18.4%)",
@@ -24,17 +24,29 @@
 		"--bracket3": "hsl(31.2, 19.8%, 49.4%)",
 		"--bracket4": "hsl(8.1, 22.2%, 54.1%)",
 		"--codelens-text": "hsl(0, 6.5%, 36.5%)",
+		"--md-h1": "hsl(12.2, 100%, 75%)",
+		"--md-h2": "hsl(11.7, 74.5%, 67.6%)",
+		"--md-h3": "hsl(11.5, 50%, 56%)",
+		"--md-h4": "hsl(11.8, 45%, 51%)",
+		"--md-h5": "hsl(12, 40%, 47%)",
+		"--md-h6": "hsl(12.5, 35%, 43%)",
+		"--md-h2-txt": "hsl(341.6, 70%, 63.5%, .95)",
+		"--md-h3-txt": "hsl(341.6, 65%, 63.5%, .95)",
+		"--md-h4-txt": "hsl(341.6, 60%, 63.5%, .9)",
+		"--md-h6-txt": "hsl(341.6, 50%, 63.5%, .85)",
 		// Language
 		"--keyword": "hsl(12.1, 82.8%, 65.9%)",
 		"--variable": "hsl(20, 56.6%, 72%)",
 		"--punctuation": "hsl(20, 28.2%, 48.6%)",
-		"--comment": "hsl(339.2, 10.7%, 52.5%)",
-		"--comment-brighter": "hsl(337.1, 15.1%, 72.7%)",
-		"--string": "hsl(25.3, 79.3%, 60.2%)",
-		"--string2": "hsl(25.3, 79.3%, 70.2%)",
+		"--comment1": "hsl(339, 11%, 53%)",
+		"--comment2": "hsl(339, 11%, 62%)",
+		"--comment-brighter": "hsl(339, 15%, 73%)",
+		"--string": "hsl(25, 79%, 60%)",
+		"--string2": "hsl(25, 79%, 70%)",
 		"--number": "hsl(90, 23.3%, 59.6%)",
-		"--constant": "hsl(36.6, 100%, 82.9%)",
-		"--constant2": "hsl(265, 15.2%, 69%)",
+		"--constant-warm": "hsl(36.6, 100%, 83%)",
+		// "--constant-cold": "hsl(265, 15%, 69%)",
+		"--constant-cold": "hsl(265, 12%, 68%)",
 		// "--function": "hsl(33.8, 100%, 69%)",
 		"--function": "hsl(31, 93%, 67%)",
 		// For hover color when used on interactive elements
@@ -74,6 +86,7 @@
 		"editor.wordHighlightBackground": "var(--highlight)",
 		"editor.wordHighlightStrongBackground": "var(--highlight)",
 		"editorCursor.foreground": "var(--text1)",
+		"editorBracketMatch.border": "var(--bracket3)",
 		// "editorBracketHighlight.foreground1": "#ffca85",
 		"editorBracketHighlight.foreground1": "var(--text1)",
 		// "editorBracketHighlight.foreground2": "#e3b578",
@@ -87,19 +100,26 @@
 		// "editorBracketHighlight.foreground6": "#A68963",
 		"editorBracketHighlight.foreground6": "var(--bracket2)",
 		"editorBracketHighlight.unexpectedBracket.foreground": "var(--keyword)",
+		"editorBracketPairGuide.activeBackground1": "var(--punctuation)",
+		"editorBracketPairGuide.activeBackground2": "var(--punctuation)",
+		"editorBracketPairGuide.activeBackground3": "var(--punctuation)",
+		"editorBracketPairGuide.activeBackground4": "var(--punctuation)",
+		"editorBracketPairGuide.activeBackground5": "var(--punctuation)",
+		"editorBracketPairGuide.activeBackground6": "var(--punctuation)",
 		// "editorCodeLens.foreground": "var(--codelens-text)",
-		// "editorError.foreground": "var(--error)"
+		"editorError.foreground": "var(--error)",
 		"editorGroupHeader.tabsBackground": "var(--surface2)",
 		"editorInlayHint.background": "#0000",
-		"editorInlayHint.foreground": "var(--comment)",
+		"editorInlayHint.foreground": "var(--comment1)",
 		"editorLineNumber.activeForeground": "var(--comment-brighter)",
-		"editorLineNumber.foreground": "var(--comment)",
+		"editorLineNumber.foreground": "var(--comment1)",
 		"editorLink.activeForeground": "var(--function-brighter)",
 		// "editorSuggestWidget.background": "var(--surface4)",
 		"editorSuggestWidget.focusHighlightForeground": "var(--function)",
 		"editorSuggestWidget.highlightForeground": "var(--function)",
 		"editorSuggestWidget.selectedBackground": "var(--highlight)",
 		// "editorSuggestWidget.selectedForeground": "var(--text1)",
+		// "editorWarning.foreground": "var(--function-brighter)",
 		"editorWidget.background": "var(--surface4)",
 		// ?
 		// Not sure if this should instead be the same color
@@ -140,7 +160,7 @@
 		"statusBar.foreground": "var(--text1)",
 		"statusBar.noFolderBackground": "var(--status-bar)",
 		"symbolIcon.classForeground": "var(--entity)",
-		"symbolIcon.constantForeground": "var(--constant)",
+		"symbolIcon.constantForeground": "var(--constant-warm)",
 		"symbolIcon.fieldForeground": "var(--variable)",
 		"symbolIcon.functionForeground": "var(--function)",
 		"symbolIcon.methodForeground": "var(--function)",
@@ -169,7 +189,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "var(--comment)"
+				"foreground": "var(--comment1)"
 			}
 		},
 		{
@@ -233,7 +253,7 @@
 			"name": "Constant, Function Argument, Tag Attribute, Embedded",
 			"scope": [
 				"constant.language",
-				// "support.constant",
+				"support.constant",
 				"constant.character",
 				"constant.escape",
 				// "variable.parameter",
@@ -245,7 +265,7 @@
 				// "keyword.other"
 			],
 			"settings": {
-				"foreground": "var(--constant)"
+				"foreground": "var(--constant-warm)"
 			}
 		},
 		{
@@ -254,21 +274,22 @@
 				"source.sass keyword.control"
 			],
 			"settings": {
-				"foreground": "var(--constant)"
+				"foreground": "var(--constant-warm)"
 			}
 		},
 		{
 			"name": "Other Constant",
 			"scope": [
-				"support.constant",
+				"source.css support.constant",
 				"support.constant.property-value",
 				// "support.constant.color.w3c-extended-color-name.css"
 				"constant.other.color",
 				// "meta.property-list.css",
 				"meta.property-value.css"
+				// "constant.language.json"
 			],
 			"settings": {
-				"foreground": "var(--constant2)"
+				"foreground": "var(--constant-cold)"
 			}
 		},
 		{
@@ -404,13 +425,12 @@
 			}
 		},
 		{
-			"name": "String, Symbols, Inherited Class, Markup Heading",
+			"name": "String, Symbols, Inherited Class",
 			"scope": [
 				"string",
 				"constant.other.symbol",
 				"constant.other.key",
 				"entity.other.inherited-class",
-				"markup.heading",
 				"markup.inserted.git_gutter",
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
@@ -503,12 +523,101 @@
 		{
 			"name": "Markdown - Heading",
 			"scope": [
-				"markdown.heading",
-				"markup.heading | markup.heading entity.name",
-				"markup.heading.markdown punctuation.definition.heading.markdown"
+				"heading.1.markdown punctuation.definition.heading"
 			],
 			"settings": {
-				"foreground": "var(--keyword)"
+				"foreground": "var(--md-h1)"
+			}
+		},
+		{
+			"name": "Markdown - Heading 2",
+			"scope": [
+				"heading.2.markdown punctuation.definition.heading"
+			],
+			"settings": {
+				"foreground": "var(--md-h2)"
+			}
+		},
+		{
+			"name": "Markdown - Heading 3",
+			"scope": [
+				"heading.3.markdown punctuation.definition.heading"
+			],
+			"settings": {
+				"foreground": "var(--md-h3)"
+			}
+		},
+		{
+			"name": "Markdown - Heading 4",
+			"scope": [
+				"heading.4.markdown punctuation.definition.heading"
+			],
+			"settings": {
+				"foreground": "var(--md-h4)"
+			}
+		},
+		{
+			"name": "Markdown - Heading 5",
+			"scope": [
+				"heading.5.markdown punctuation.definition.heading"
+			],
+			"settings": {
+				"foreground": "var(--md-h5)"
+			}
+		},
+		{
+			"name": "Markdown - Heading 6",
+			"scope": [
+				"heading.6.markdown punctuation.definition.heading"
+			],
+			"settings": {
+				"foreground": "var(--md-h6)"
+			}
+		},
+		{
+			"name": "Markdown - Heading Entity 1",
+			"scope": [
+				"heading.1.markdown entity.name"
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown - Heading Entity 2",
+			"scope": [
+				"heading.2.markdown entity.name"
+			],
+			"settings": {
+				"foreground": "var(--md-h3-txt)",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown - Heading Entity 4",
+			"scope": [
+				"heading.4.markdown entity.name"
+			],
+			"settings": {
+				"foreground": "var(--md-h2-txt)"
+			}
+		},
+		{
+			"name": "Markdown - Heading Entity 5",
+			"scope": [
+				"heading.5.markdown entity.name"
+			],
+			"settings": {
+				"foreground": "var(--md-h4-txt)"
+			}
+		},
+		{
+			"name": "Markdown - Heading Entity 6",
+			"scope": [
+				"heading.6.markdown entity.name"
+			],
+			"settings": {
+				"foreground": "var(--md-h6-txt)"
 			}
 		},
 		{
@@ -596,7 +705,7 @@
 				"constant.other.reference.link.markdown"
 			],
 			"settings": {
-				"foreground": "var(--constant)"
+				"foreground": "var(--constant-warm)"
 			}
 		},
 		{

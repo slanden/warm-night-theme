@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.1.0
+
+- Added active bracket pair colors
+- Changed Markdown header colors to make them more distinguishable from each other
+- Adjusted the cold constant color (used in CSS) for better contrast with comments
+- Fixed certain PHP constants not being the correct color
+
 ## 1.0.6
 
 - Fixed some cases of nested properties having incorrect color
