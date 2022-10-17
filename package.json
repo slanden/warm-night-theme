@@ -1,43 +1,44 @@
 {
-    "name": "warm-night",
-    "displayName": "Warm Night",
-    "description": "A warm dark theme for VS Code",
-    "publisher": "shelby-landen",
-    "version": "1.1.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/slanden/warm-night-theme.git"
-    },
-    "engines": {
-        "vscode": "^1.68.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "keywords": [
-        "warm",
-        "dark",
-        "theme"
-    ],
-    "icon": "icon.png",
-    "galleryBanner": {
-        "color": "#1d2a2a",
-        "theme": "dark"
-    },
-    "contributes": {
-        "themes": [
-            {
-                "label": "Warm Night",
-                "uiTheme": "vs-dark",
-                "path": "./themes/warm-night.json"
-            }
-        ]
-    },
-    "scripts": {
-        "replace": "~/Projects/replace-css-vars/target/release/replace-css-vars source-color-theme.json | sed '\\|//.*|d' > themes/warm-night.json",
-        "publish": "vsce publish"
-    },
-    "devDependencies": {
-        "vsce": "^2.10.0"
-    }
+  "name": "warm-night",
+  "displayName": "Warm Night",
+  "description": "A warm dark theme for VS Code",
+  "publisher": "shelby-landen",
+  "version": "1.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slanden/warm-night-theme.git"
+  },
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "warm",
+    "dark",
+    "theme"
+  ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1d2a2a",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Warm Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/warm-night.json"
+      }
+    ]
+  },
+  "scripts": {
+    "replace": "~/Projects/replace-css-vars/target/release/replace-css-vars source-color-theme.json | sed '\\|//.*|d' > themes/warm-night.json",
+    "vscode:prepublish": "npm run replace",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "vsce": "^2.11.0"
+  }
 }

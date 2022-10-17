@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.2.0
+
+- Fixed `support.variable` not being colored
+- Dimmed the const color a little
+- Desaturated the string color slightly
+- Brightened the highlights
+
 ## 1.1.0
 
 - Added active bracket pair colors
