@@ -205,6 +205,7 @@
         "meta.block variable.other",
         // Other
         "meta.function.call.rust",
+        "meta.method-call.java",
         "meta.object.member",
         "support.other.variable",
         "support.variable",
@@ -259,10 +260,12 @@
         "support.constant",
         "constant.character",
         "constant.escape",
+        "constant.keyword",
         // "variable.parameter",
         // "keyword.other.unit",
         "constant.other.caps",
         "constant.other.php",
+        "constant.other.class",
         "variable.other.constant"
         // "variable.other.enummember",
         // "keyword.other"
@@ -372,8 +375,10 @@
         // "punctuation.definition.template-expression.begin",
         // "punctuation.definition.template-expression.end",
         "keyword.operator",
-        "punctuation.definition.interpolation"
+        "punctuation.definition.interpolation",
+        // "storage.type.function.arrow"
         // "expression.begin.js"
+        "storage.modifier.reference"
       ],
       "settings": {
         "foreground": "var(--operator)"
@@ -434,12 +439,11 @@
       }
     },
     {
-      "name": "String, Symbols, Inherited Class",
+      "name": "String, Symbols",
       "scope": [
         "string",
         "constant.other.symbol",
         "constant.other.key",
-        "entity.other.inherited-class",
         "markup.inserted.git_gutter",
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
@@ -460,12 +464,17 @@
       "name": "Entity Types, Class, Support",
       "scope": [
         "entity.name",
-        "support.type",
+        "entity.other.inherited-class",
+        "markup.changed.git_gutter",
+        "meta.use",
+        "storage.type.annotation",
+        "storage.type.java",
+        "storage.modifier.import.java",
+        "storage.modifier.package.java",
         "support.class",
         "support.other.namespace.use.php",
-        "meta.use",
         "support.other.namespace.php",
-        "markup.changed.git_gutter",
+        "support.type",
         "support.type.sys-types"
       ],
       "settings": {

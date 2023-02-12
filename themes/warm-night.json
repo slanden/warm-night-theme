@@ -119,6 +119,7 @@
         "string constant.other.placeholder",
         "meta.block variable.other",
         "meta.function.call.rust",
+        "meta.method-call.java",
         "meta.object.member",
         "support.other.variable",
         "support.variable",
@@ -171,8 +172,10 @@
         "support.constant",
         "constant.character",
         "constant.escape",
+        "constant.keyword",
         "constant.other.caps",
         "constant.other.php",
+        "constant.other.class",
         "variable.other.constant"
       ],
       "settings": {
@@ -246,7 +249,7 @@
         "keyword.other.substitution"
       ],
       "settings": {
-        "foreground": "#9F7059FF"
+        "foreground": "#9F6F63FF"
       }
     },
     {
@@ -264,7 +267,8 @@
       "scope": [
         "punctuation.section.embedded",
         "keyword.operator",
-        "punctuation.definition.interpolation"
+        "punctuation.definition.interpolation",
+        "storage.modifier.reference"
       ],
       "settings": {
         "foreground": "#4C928BFF"
@@ -325,12 +329,11 @@
       }
     },
     {
-      "name": "String, Symbols, Inherited Class",
+      "name": "String, Symbols",
       "scope": [
         "string",
         "constant.other.symbol",
         "constant.other.key",
-        "entity.other.inherited-class",
         "markup.inserted.git_gutter",
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
@@ -351,12 +354,17 @@
       "name": "Entity Types, Class, Support",
       "scope": [
         "entity.name",
-        "support.type",
+        "entity.other.inherited-class",
+        "markup.changed.git_gutter",
+        "meta.use",
+        "storage.type.annotation",
+        "storage.type.java",
+        "storage.modifier.import.java",
+        "storage.modifier.package.java",
         "support.class",
         "support.other.namespace.use.php",
-        "meta.use",
         "support.other.namespace.php",
-        "markup.changed.git_gutter",
+        "support.type",
         "support.type.sys-types"
       ],
       "settings": {
