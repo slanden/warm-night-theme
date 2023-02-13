@@ -1,5 +1,10 @@
 # Change Log
 
+## 1.3.0
+
+- Added highlighting for some languages where it was missing or incorrect
+- Increased contrast of colorized bracket pairs
+
 ## 1.2.0
 
 - Fixed `support.variable` not being colored
