@@ -200,6 +200,7 @@
         "variable",
         "variable.parameter",
         "string constant.other.placeholder",
+        "string meta.interpolation",
         // Block level variables
         "meta.block variable.other",
         // Other
@@ -265,6 +266,7 @@
         "constant.other.caps",
         "constant.other.php",
         "constant.other.class",
+        "constant.other.option",
         "variable.other.constant"
         // "variable.other.enummember",
         // "keyword.other"
@@ -311,6 +313,7 @@
       "name": "Keyword, Storage",
       "scope": [
         "keyword",
+        "keyword.operator.new",
         "storage.type",
         "storage.modifier"
       ],
@@ -333,22 +336,17 @@
     {
       "name": "Operator, Misc",
       "scope": [
-        // "keyword.control",
-        // "constant.other.color",
+        "meta.brace",
+        // Needed at least for JavaScript's `bind()`
+        "meta.object.member meta.brace",
         "punctuation",
-        // "meta.tag",
         "punctuation.separator.inheritance.php",
         "punctuation.definition.tag",
         "punctuation.definition.tag.html",
         "punctuation.definition.tag.begin.html",
         "punctuation.definition.tag.end.html",
-        // "punctuation.definition.template-expression",
-        // "source.js expression punctuation.definition.template-expression",
-        // "meta.template.expression punctuation.definition.template-expression",
-        // "punctuation.section.embedded",
-        // "punctuation.definition.template-expression",
-        // "meta.template.expression",
-        // "string.template",
+        "punctuation variable",
+        "punctuation variable.parameter",
         "keyword.other.template",
         "keyword.other.substitution"
       ],
@@ -371,12 +369,9 @@
       "scope": [
         // "entity.name.function.preprocessor",
         "punctuation.section.embedded",
-        // "punctuation.definition.template-expression.begin",
-        // "punctuation.definition.template-expression.end",
         "keyword.operator",
         "punctuation.definition.interpolation",
-        // "storage.type.function.arrow"
-        // "expression.begin.js"
+        "punctuation.separator.statement",
         "storage.modifier.reference"
       ],
       "settings": {
