@@ -101,12 +101,6 @@
     "editorBracketHighlight.foreground5": "var(--bracket5)",
     "editorBracketHighlight.foreground6": "var(--bracket6)",
     "editorBracketHighlight.unexpectedBracket.foreground": "var(--keyword)",
-    "editorBracketPairGuide.activeBackground1": "var(--punctuation)",
-    "editorBracketPairGuide.activeBackground2": "var(--punctuation)",
-    "editorBracketPairGuide.activeBackground3": "var(--punctuation)",
-    "editorBracketPairGuide.activeBackground4": "var(--punctuation)",
-    "editorBracketPairGuide.activeBackground5": "var(--punctuation)",
-    "editorBracketPairGuide.activeBackground6": "var(--punctuation)",
     // "editorCodeLens.foreground": "var(--codelens-text)",
     "editorError.foreground": "var(--error)",
     "editorGroupHeader.tabsBackground": "var(--surface2)",
@@ -209,15 +203,12 @@
         "meta.object.member",
         "support.other.variable",
         "support.variable",
-        "string.other.link"
-      ],
-      "settings": {
-        "foreground": "var(--variable)"
-      }
-    },
-    {
-      "name": "CSS Class and Support",
-      "scope": [
+        "string.other.link",
+        // Markdown Links
+        "string.other.link.title.markdown",
+        // * Attributes & Properties
+        "entity.other.attribute-name",
+        "meta.tag",
         "source.css support.type.property-name",
         "source.sass support.type.property-name",
         "source.scss support.type.property-name",
@@ -232,53 +223,22 @@
       }
     },
     {
-      "name": "Attributes",
-      "scope": [
-        "entity.other.attribute-name",
-        "meta.tag"
-      ],
-      "settings": {
-        "foreground": "var(--variable)"
-      }
-    },
-    {
-      // These don't seem to have an effect
-      "name": "HTML Attributes",
-      "scope": [
-        "text.html.basic entity.other.attribute-name.html",
-        "text.html.basic entity.other.attribute-name"
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "var(--variable)"
-      }
-    },
-    {
-      "name": "Constant, Function Argument, Tag Attribute, Embedded",
+      "name": "Constants",
       "scope": [
         "constant.language",
         "support.constant",
         "constant.character",
         "constant.escape",
         "constant.keyword",
-        // "variable.parameter",
-        // "keyword.other.unit",
         "constant.other.caps",
         "constant.other.php",
         "constant.other.class",
         "constant.other.option",
-        "variable.other.constant"
-        // "variable.other.enummember",
-        // "keyword.other"
-      ],
-      "settings": {
-        "foreground": "var(--constant-warm)"
-      }
-    },
-    {
-      "name": "CSS ID's",
-      "scope": [
-        "source.sass keyword.control"
+        "variable.other.constant",
+        // CSS IDs
+        "source.sass keyword.control",
+        // Markdown link anchor
+        "constant.other.reference.link.markdown"
       ],
       "settings": {
         "foreground": "var(--constant-warm)"
@@ -289,11 +249,8 @@
       "scope": [
         "source.css support.constant",
         "support.constant.property-value",
-        // "support.constant.color.w3c-extended-color-name.css"
         "constant.other.color",
-        // "meta.property-list.css",
         "meta.property-value.css"
-        // "constant.language.json"
       ],
       "settings": {
         "foreground": "var(--constant-cold)"
@@ -312,21 +269,13 @@
     {
       "name": "Keyword, Storage",
       "scope": [
+        "entity.name.tag",
         "keyword",
         "keyword.operator.new",
-        "storage.type",
-        "storage.modifier"
-      ],
-      "settings": {
-        "foreground": "var(--keyword)"
-      }
-    },
-    {
-      "name": "Tag",
-      "scope": [
-        "entity.name.tag",
         "meta.tag.sgml",
         "markup.deleted.git_gutter",
+        "storage.type",
+        "storage.modifier",
         "variable.language"
       ],
       "settings": {
@@ -355,68 +304,38 @@
       }
     },
     {
-      "name": "ES7 Bind Operator",
-      "scope": [
-        "source.js constant.other.object.key.js string.unquoted.label.js"
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "var(--operator)"
-      }
-    },
-    {
       "name": "Operators, Preprocessors",
       "scope": [
-        // "entity.name.function.preprocessor",
-        "punctuation.section.embedded",
         "keyword.operator",
-        "punctuation.definition.interpolation",
         "punctuation.separator.statement",
-        "storage.modifier.reference"
+        "storage.modifier.reference",
+        // Needed at least for Markdown separator
+        "meta.separator",
+        // * String Interpolation
+        "punctuation.definition.interpolation",
+        "punctuation.definition.template-expression",
+        "punctuation.section.embedded"
       ],
       "settings": {
         "foreground": "var(--operator)"
       }
     },
     {
-      "name": "Function, Special Method",
+      "name": "Function & Methods",
       "scope": [
         "entity.name.function",
-        "meta.function-call",
-        "variable.function",
-        "support.function",
-        "keyword.other.special-method"
-      ],
-      "settings": {
-        "foreground": "var(--function)"
-      }
-    },
-    {
-      "name": "Sub-methods",
-      "scope": [
+        "entity.name.method.js",
         "entity.name.module.js",
-        "variable.import.parameter.js",
-        "variable.other.class.js"
-      ],
-      "settings": {
-        "foreground": "var(--function)"
-      }
-    },
-    {
-      "name": "entity.name.method.js",
-      "scope": [
-        "entity.name.method.js"
-      ],
-      "settings": {
-        "fontStyle": "italic",
-        "foreground": "var(--function)"
-      }
-    },
-    {
-      "name": "meta.method.js",
-      "scope": [
+        "keyword.other.special-method",
         "meta.class-method.js entity.name.function.js",
-        "variable.function.constructor"
+        "meta.function-call",
+        "support.function",
+        "variable.function",
+        "variable.function.constructor",
+        "variable.import.parameter.js",
+        "variable.other.class.js",
+        // Markdown
+        "markup.underline.link"
       ],
       "settings": {
         "foreground": "var(--function)"
@@ -446,18 +365,21 @@
       }
     },
     {
-      "name": "Regular Expressions",
+      "name": "RegEx & Markup inline code",
       "scope": [
-        "string.regexp"
+        "markup.inline.raw.string.markdown",
+        "string.regexp",
+        "text.html.markdown markup.inline.raw.markdown"
       ],
       "settings": {
         "foreground": "var(--string2)"
       }
     },
     {
-      "name": "Entity Types, Class, Support",
+      "name": "Entities & Classes",
       "scope": [
         "entity.name",
+        "entity.other.attribute-name.class",
         "entity.other.inherited-class",
         "markup.changed.git_gutter",
         "meta.use",
@@ -476,60 +398,15 @@
       }
     },
     {
-      "name": "CSS Classes",
-      "scope": [
-        "entity.other.attribute-name.class"
-      ],
-      "settings": {
-        "foreground": "var(--entity)"
-      }
-    },
-    {
-      "name": "Inserted",
-      "scope": [
-        "markup.inserted"
-      ],
-      "settings": {
-        "foreground": "#C3E88D"
-      }
-    },
-    {
-      "name": "Deleted",
-      "scope": [
-        "markup.deleted"
-      ],
-      "settings": {
-        "foreground": "#FF5370"
-      }
-    },
-    {
-      "name": "Changed",
-      "scope": [
-        "markup.changed"
-      ],
-      "settings": {
-        "foreground": "#C792EA"
-      }
-    },
-    {
-      "name": "URL",
+      "name": "URL & Underline",
       "scope": [
         "*url*",
         "*link*",
-        "*uri*"
+        "*uri*",
+        "markup.underline"
       ],
       "settings": {
         "fontStyle": "underline"
-      }
-    },
-    {
-      "name": "Markdown - Markup Raw Inline",
-      "scope": [
-        "text.html.markdown markup.inline.raw.markdown",
-        "markup.inline.raw.string.markdown"
-      ],
-      "settings": {
-        "foreground": "var(--string2)"
       }
     },
     {
@@ -633,9 +510,10 @@
       }
     },
     {
-      "name": "Markup - Italic",
+      "name": "Markup - Italic & Quotes",
       "scope": [
-        "markup.italic"
+        "markup.italic",
+        "markup.quote"
       ],
       "settings": {
         "fontStyle": "italic"
@@ -666,67 +544,12 @@
       }
     },
     {
-      "name": "Markup - Underline",
-      "scope": [
-        "markup.underline"
-      ],
-      "settings": {
-        "fontStyle": "underline"
-      }
-    },
-    {
-      "name": "Markup - Quote",
-      "scope": [
-        "markup.quote"
-      ],
-      "settings": {
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "Markdown - Separator",
-      "scope": [
-        "meta.separator"
-      ],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "var(--operator)"
-      }
-    },
-    {
-      "name": "Markdown - Link",
-      "scope": [
-        "string.other.link.title.markdown"
-      ],
-      "settings": {
-        "foreground": "var(--variable)"
-      }
-    },
-    {
       "name": "Markdown - Link Description",
       "scope": [
         "string.other.link.description.title.markdown"
       ],
       "settings": {
         "foreground": "var(--text1)"
-      }
-    },
-    {
-      "name": "Markdown - Link Anchor",
-      "scope": [
-        "constant.other.reference.link.markdown"
-      ],
-      "settings": {
-        "foreground": "var(--constant-warm)"
-      }
-    },
-    {
-      "name": "Markdown - Link",
-      "scope": [
-        "markup.underline.link"
-      ],
-      "settings": {
-        "foreground": "var(--function)"
       }
     }
   ]
