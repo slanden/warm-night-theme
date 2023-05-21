@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.3.2
+- Updated the screenshot
+
 ## 1.3.1
 - Fixed JavaScript string interpolation color being inconsistent with other languages
 - Fixed wrong color for some brackets/braces, and the `new` keyword
